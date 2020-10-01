@@ -1,0 +1,9 @@
+<h1>Blog Pages</h1>
+
+<!-- set up instance in pages controller. Use page as an alias from config-routes-->
+<% @pages.each do |page| %>
+    <p><%= link_to page.title, page %></p>
+<% end %>
+
+<%= link_to 'New page', new_page_path %>
+
